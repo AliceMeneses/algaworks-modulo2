@@ -1,5 +1,6 @@
 package com.algaworks.algafood.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.algaworks.algafood.modelo.Cliente;
@@ -10,8 +11,12 @@ public class AtivacaoClienteService {
 
 	private Notificador notificador;
 
+	@Autowired
 	public AtivacaoClienteService(Notificador notificador) {
 		this.notificador = notificador;
+	}
+	
+	public AtivacaoClienteService(String algo) {
 	}
 
 	public void ativar(Cliente cliente) {
