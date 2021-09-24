@@ -1,18 +1,13 @@
 package com.algaworks.algafood.config;
 
-import org.springframework.context.annotation.Bean;
-
-import com.algaworks.algafood.notificacao.Notificador;
-import com.algaworks.algafood.service.AtivacaoClienteService;
-
 //@Configuration
 public class ServiceConfig {
 	
-	@Bean
+	/*@Bean
 	public AtivacaoClienteService ativacaoClienteService(Notificador notificador) {
 		AtivacaoClienteService ativacaoClienteService = new AtivacaoClienteService(notificador);
 		
 		return ativacaoClienteService;
-	}
+	}*/
 	
 }
